@@ -1,0 +1,28 @@
+{
+  "name": "ReactNativeBoilerPlate",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "ios": "react-native run-ios",
+    "iospad": "react-native run-ios --simulator 'iPad Air'",
+    "android": "cd android && ./gradlew clean && cd .. && react-native run-android",
+    "androidRl": "cd android && ./gradlew clean && ./gradlew assembleRelease"
+  },
+  "dependencies": {
+    "react": "16.8.3",
+    "react-native": "0.59.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.54.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
