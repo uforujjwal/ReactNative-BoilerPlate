@@ -1,14 +1,14 @@
-import React, {Component} from 'react';
-import {Text, View} from 'react-native';
+import React from 'react';
+import {createStackNavigator, createAppContainer} from 'react-navigation';
+import {Screens, Root} from './screens';
 
-export class index extends Component {
+
+const AppNavigator = createStackNavigator(Screens, Root);
+const AppContainer = createAppContainer(AppNavigator);
+
+
+export default class MainApp extends React.Component {
   render () {
-    return (
-      <View>
-        <Text> Test Component </Text>
-      </View>
-    );
+    return <AppContainer />;
   }
 }
-
-export default index;
