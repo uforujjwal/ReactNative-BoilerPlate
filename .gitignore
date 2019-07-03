@@ -68,4 +68,6 @@ android/app/src/main/res/.DS_Store
 android/app/src/main/.DS_Store
 android/app/src/.DS_Store
 android/app/.DS_Store
+android/local.properties
 *.DS_Store
+android/ReactNativeBoilerPlate.iml
